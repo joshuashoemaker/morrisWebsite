@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,nav,header,h1,h2,h3,h4,h5,h6,a{
+  padding: 0px;
+  margin: 0px;
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:visited{
+  color: white;
+}
+
+.alterNav{
+  background-color: rgb(19, 19, 19);
+}
+
+button{
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 1px;
+  border-color: rgb(195, 227, 255);
+  border-radius: 32px;
+  color: rgb(195, 227, 255);
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button:hover{
+  background-color: rgb(195, 227, 255);
+  color: white;
+}
+
+.banner{
+  width: 100%;
+}
+
+.banner .logo{
+  width: 240px;
+}
+
+
+header{
+  align-items: center;
+  background-image: url("/img/Sunset.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+
+header h1{
+  font-size: 72px;
+}
+
+header span{
+  font-size: 26px;
+}
+
+footer{
+  color:white;
+  padding: 20px 40px;
+  background-color: black;
+  font-family: canada-type-gibson, sans-serif;
+  text-align: center;
+}
+
+footer a{
+  font-family: canada-type-gibson, sans-serif;
+  font-size: 18px;
+}
+
+nav{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  transition: background-color 0.31s linear;
+  transition-timing-function: ease-in;
+  top: 0px;
+  width: 100%;
+}
+
+nav h3{
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+nav ul{
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+nav ul li{
+  cursor: pointer;
+  display: inline;
+  margin-right: 5px;
+  padding:5px;
+  text-align: right;
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navButton:hover{
+  color: rgb(195, 227, 255);
+}
+
+section{
+  text-align: justify;
+}
+
+#signup{
+  background-color: #e17055;
+  padding: 20px 0px;
+}
+
+#signup h1{
+  text-align: center;
+  color: white;
+}
+
+#signup input[type=email]{
+  border: solid 2px #74b9ff;
+  border-radius: 20px;
+  border-left: none;
+  border-right: none;
+  display: block;
+  font-size: 18px;
+  margin: 20px auto 10px;
+  padding: 16px 18px;
+  text-align: center;
+  width: 300px;
+}
+
+#signup input[type=text]{
+  border: solid 2px #74b9ff;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background: transparent;
+  display: block;
+  font-size: 18px;
+  margin: 20px auto 10px;
+  padding: 6px 18px;
+  text-align: center;
+  width: 300px;
+}
+
+#signup input[type=text]::placeholder{
+  color: white;
+}
+
+#signup input[type=submit]{
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px #74b9ff;
+  border-radius: 20px;
+  border-left: none;
+  border-right: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 10px auto;
+  width: 300px;
+}
+
+#signup input[type=submit]:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.subnote{
+  color: white;
+  text-align: center;
+  display: block;
+  margin: -30px auto 0px;
+  max-width: 300px;
+}
+
+section{
+  max-width: 700px;
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+
+section p{
+  font-size: 24px;
+}
+
+.socialIcons{
+  margin: 10px auto;
+}
+
+.socialIcons a{
+  margin: 0px 6px;
+}
+
+.title{
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  header span{
+    display: block;
+    padding: 0px;
+    margin: 0px auto;
+    font-size: 16px;
+  }
+
+  header .title{
+    font-size: 26px;
+  }
+  
+  footer{
+    padding: 20px 6px;
+  }
+
+  nav .title{
+    font-size: 16px;
+  }
+
+  nav{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  nav h3{
+    margin: 4px auto; 
+    display: block;
+    font-size: 16px;
+  }
+
+  nav ul{
+    margin: 4px auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  section{
+    width: 100%;
+    text-align: justify;
+  }
+
+  section p{
+    font-size: 18px;
+  }
+}
